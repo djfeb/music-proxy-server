@@ -6,7 +6,7 @@ const app = express();
 // Proxy middleware
 app.use((req, res) => {
   const options = {
-    hostname: 'localhost',
+    hostname: '192.168.0.199',
     port: 3001,
     path: req.originalUrl,
     method: req.method,
